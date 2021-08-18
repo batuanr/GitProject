@@ -3,27 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
-<table>
-    <tr>
-        <td colspan="5"><input type="text" id="ok"></td>
-    </tr>
-    <tr>
-        <td><input type="button" class="mat" value="7" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="8" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="9" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="Del" onclick="ok.value=ok.value.substr(0,ok.value.length-1)"></td>
-        <td><input type="button" class="mat" value="AC" onclick="ok.value=''"></td>
-    </tr>
-    <tr>
-        <td><input type="button" class="mat" value="4" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="5" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="6" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="*" onclick="ok.value+=this.value"></td>
-        <td><input type="button" class="mat" value="/" onclick="ok.value+=this.value"></td>
-    </tr>
-    <tr></tr>
-</table>
+<input type="text" id="num1">
+<input type="text" id="num2">
+<button onclick="cong()">cong</button>
+<button onclick="tru()">tru</button>
+<button onclick="nhan()">nhan</button>
+<button onclick="chia()">chia</button>
+
+<p id="ketqua"></p>
+<script src="maytinh.js"></script>
 </body>
 </html>
