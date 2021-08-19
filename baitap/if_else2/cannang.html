@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt("Nhập cân nặng kg:");
+    let b=prompt("Nhập chiều cao M:");
+    let bmi;
+    a=parseFloat(a);
+    b=parseFloat(b);
+    bmi=a/(b**2);
+    if(bmi<18){
+        alert("Bạn quá gầy");
+    }else if(bmi<25){
+        alert("Cơ thể bạn bình thường");
+    }else if(bmi<30){
+        alert("Over weight");
+    }else{
+        alert("Obese");
+    }
+</script>
+</body>
+</html>

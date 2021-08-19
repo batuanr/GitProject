@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="doc()">
+<img src="anh.jpg" alt="anh" id="anh" style="position: relative; left: 500px;top: 300px">
+<script>
+    function up() {
+      let ale=document.getElementById("anh");
+      ale.style.top=parseInt(ale.style.top) - 9 + "px";
+    }
+    function down() {
+        let ale=document.getElementById("anh");
+        ale.style.top=parseInt(ale.style.top)+ 9+ "px";
+    }
+    function left(){
+        let ale=document.getElementById("anh");
+        ale.style.left=parseInt(ale.style.left) - 9 +"px";
+    }
+    function right() {
+        let ale=document.getElementById("anh");
+        ale.style.left=parseInt(ale.style.left) + 9+ "px";
+    }
+    function key(evt) {
+        switch (evt.keyCode) {
+            case 38: up();
+            break;
+            case 40: down();
+            break;
+            case 37: left();
+            break;
+            case 39: right();
+            break;
+        }
+    }
+    function doc() {
+        window.addEventListener("keydown",key);
+    }
+</script>
+</body>
+</html>

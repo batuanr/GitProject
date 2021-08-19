@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img src="anh.jpg" alt="ôt" id="img">
+    <p>hãy nhấn vào nút phía dưới</p>
+    <input type="button" value="nhấn" onclick="right()">
+</form>
+<script>
+    let img=null;
+    img=document.getElementById("img");
+    function ok() {
+        img=document.getElementById("img");
+        img.style.position="relative";
+        img.style.left="100px";
+    }
+    function right() {
+        img.style.left=parseInt(img.style.left) + 10 +"px";
+    }
+    window.onload=ok;
+
+</script>
+</body>
+</html>
