@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=prompt("Nhập a");
+  let b=prompt("Nhập b");
+  a=parseInt(a)
+  b=parseInt(b)
+  if(a==0&&b==0){
+      alert("Phương trình có vô số nghiệm")
+  }
+  else{
+      if(a==0&&b!=0){
+          alert("PT vô nghiệm");
+      }
+      else{
+          alert("Phương trình có nghiệm là "+ (-b/a));
+      }
+  }
+</script>
+</body>
+</html>

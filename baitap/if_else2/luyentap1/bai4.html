@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let diem;
+  let diem1=prompt("xin mời nhập điểm giữa kỳ");
+  let diem2=prompt("xin mời nhập điểm cuối kỳ");
+  diem1=parseInt(diem1);
+  diem2=parseInt(diem2);
+  diem=(diem1+diem2)/2;
+  diem=parseFloat(diem)
+  if(diem>=0&&diem<=10){
+      if(diem>5){
+         if(diem>7){
+             alert("giỏi");
+         }
+         else{
+             alert("khá");
+         }
+      }
+      else {
+          if(diem<3){
+              alert("yếu");
+          }
+          else{
+              alert("trung bình");
+          }
+      }
+  }else{
+      alert("xin mời bạn nhập lại");
+  }
+</script>
+</body>
+</html>

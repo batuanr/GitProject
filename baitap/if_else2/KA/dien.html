@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       div{
+          text-align: center;
+          top: auto;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <label for="dien1">Số điện cũ</label>
+    <input id="dien1" type="text"><br>
+    <label for="dien2">Số điện mới</label>
+    <input id="dien2" type="text"><br>
+    <button onclick="tien()">tính</button>
+    <p id="tien"></p>
+</div>
+<script>
+   function tien() {
+       let dien1=document.getElementById("dien1").value;
+       let dien2=document.getElementById("dien2").value;
+       let t="Tiền điện của bạn là ";
+       dien1=parseInt(dien1)
+       dien2=parseInt(dien2)
+       let a=1687;
+       let b=1734;
+       let c=2014;
+       let d=2536;
+       let e=2834;
+       let f=2927;
+       let g=dien2-dien1;
+       if(g>0){
+           if(g<=50){
+               document.getElementById("tien").innerText=t+g*a+" VND"
+           }
+           else{
+               if(g<=100){
+                   document.getElementById("tien").innerText=t+g*b+" VND"
+               }
+               else{
+                   if(g<=200){
+                       document.getElementById("tien").innerText=t+g*c+" VND"
+                   }
+                   else{
+                       if(g<=300){
+                           document.getElementById("tien").innerText=t+g*d+" VND"
+                       }
+                       else{
+                           if(g<=400){
+                               document.getElementById("tien").innerText=t+g*e+" VND"
+                           }
+                           else{
+                               document.getElementById("tien").innerText=t+g*f+" VND"
+                           }
+                       }
+                   }
+               }
+           }
+       }
+       else{
+           document.getElementById("tien").innerText="Mời bạn nhập lại";
+       }
+   }
+</script>
+</body>
+</html>

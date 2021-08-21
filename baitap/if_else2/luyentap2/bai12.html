@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money=prompt("Nhập tiền");
+    let lai=prompt("lãi suốt");
+    let month=prompt("Nhập số tháng");
+    money=parseInt(money);
+    month=parseInt(month);
+    lai=parseFloat(lai);
+    // let tienlai;
+    // let i;
+    let tien=money*Math.pow((1+lai/month),month*month);
+    alert(tien);
+    // for(i=1;i<=month;i++ ){
+    //     tienlai=money*lai;
+    //     money+=tienlai;
+    // }
+    // alert("Tiền vay hiện tại "+money);
+    // alert(Math.pow(2,3) )
+</script>
+</body>
+</html>

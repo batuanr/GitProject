@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="date">Bạn đi làm được bao nhiêu ngày ?</label><br>
+<input id="date" type="text"> ngày <br>
+<label for="level">Hãy chọn bậc của bạn ?</label><br>
+<select name="level" id="level">
+    <option value="a">Bậc A</option>
+    <option value="b">Bậc B</option>
+    <option value="c">Bậc C</option>
+    <option value="d">Bậc D</option>
+</select><br>
+<button onclick="money()">Tính</button>
+<p id="money"></p>
+<script>
+    function money() {
+        let date=document.getElementById("date").value;
+        let level=document.getElementById("level").value;
+        date=parseInt(date);
+        let a="Tiền lương của bạn là: ";
+        switch (level) {
+            case "a":document.getElementById("money").innerText=a+5000000*date/22+" VND";
+            break;
+            case "b":document.getElementById("money").innerText=a+6000000*date/23+" VND";
+            break;
+            case "c":document.getElementById("money").innerText=a+8000000*date/23+" VND";
+            break;
+            case "d":document.getElementById("money").innerText=a+10000000*date/23+" VND";
+            break
+        }
+        }
+</script>
+
+</body>
+</html>

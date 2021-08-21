@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a=prompt("Nhập a");
+  let b=prompt("Nhập b");
+  let c=prompt("Nhập c");
+  a=parseInt(a)
+  b=parseInt(b)
+  c=parseInt(c)
+  let d=b*b-4*c*a;
+  if(a==0&&b==0&&c==0){
+      alert("Phương trình có vô số nghiệm");
+  }
+  else{
+      if(a==0&&b==0){
+          alert("PT vô nghiệm");
+      }
+      else{
+          if(a==0&&c==0){
+              alert("PT vô nghiệm");
+          }else{
+              if(a==0){
+                  alert("Phương trình có nghiệm là "+(-c/b));
+              }
+              else{
+                  if(d<0){
+                      alert("PT vô nghiệm");
+                  }
+                  else{
+                      if(d==0){
+                          alert("PT có nghiệm kép là "+b/a/2);
+                      }
+                      else{
+                          alert("PT có 2 nghiệm phân biệt la x1 = "+(Math.sqrt(d)-b)/2/a+" x2 = "+(-b-Math.sqrt(d))/a/2);
+                      }
+                  }
+              }
+          }
+      }
+  }
+</script>
+</body>
+</html>

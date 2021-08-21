@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Số sản phẩm bán dược là</h1>
+<input type="text" id="sosp">
+<button onclick="tinh()">Tính số hoa hồng</button>
+<script>
+ function tinh() {
+     let a=document.getElementById("sosp").value;
+     let gia=10000;
+     a=parseFloat(a);
+     let b=gia/100*10;
+     let c=gia/10*15;
+     if(a>0){
+         if(a<10){
+             alert("Bạn có "+a*b+" VND tiền hoa hồng");
+         }
+         else{
+             alert("Bạn có "+a*c+" VND tiền hoa hồng");
+         }
+     }
+     else{
+         alert("Bạn không có hoa hồng");
+     }
+ }
+</script>
+</body>
+</html>
